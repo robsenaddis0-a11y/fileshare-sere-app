@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +13,7 @@
             box-sizing: border-box;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-
+        
         body {
             background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
             min-height: 100vh;
@@ -23,7 +22,7 @@
             align-items: center;
             padding: 20px;
         }
-
+        
         .container {
             width: 100%;
             max-width: 1000px;
@@ -33,7 +32,7 @@
             overflow: hidden;
             position: relative;
         }
-
+        
         header {
             background: linear-gradient(to right, #4a00e0, #8e2de2);
             color: white;
@@ -41,25 +40,25 @@
             text-align: center;
             position: relative;
         }
-
+        
         .logo {
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 15px;
         }
-
+        
         .logo i {
             font-size: 2.8rem;
             margin-right: 15px;
             animation: pulse 2s infinite;
         }
-
+        
         .logo h1 {
             font-size: 2.5rem;
             letter-spacing: 1px;
         }
-
+        
         .tab-container {
             display: flex;
             background-color: rgba(255, 255, 255, 0.1);
@@ -68,7 +67,7 @@
             margin: 0 auto;
             max-width: 400px;
         }
-
+        
         .tab {
             flex: 1;
             padding: 12px;
@@ -78,27 +77,27 @@
             border-radius: 50px;
             transition: all 0.3s ease;
         }
-
+        
         .tab.active {
             background-color: white;
             color: #4a00e0;
         }
-
+        
         .content {
             padding: 30px;
             position: relative;
             min-height: 500px;
         }
-
+        
         .section {
             display: none;
             animation: fadeIn 0.5s ease;
         }
-
+        
         .section.active {
             display: block;
         }
-
+        
         .card {
             background-color: white;
             border-radius: 15px;
@@ -107,23 +106,23 @@
             margin-bottom: 25px;
             text-align: center;
         }
-
+        
         .card h2 {
             color: #4a00e0;
             margin-bottom: 20px;
             font-size: 1.8rem;
         }
-
+        
         .card p {
             color: #555;
             margin-bottom: 25px;
             line-height: 1.6;
         }
-
+        
         .file-input {
             display: none;
         }
-
+        
         .file-label {
             display: block;
             background: linear-gradient(to right, #4a00e0, #8e2de2);
@@ -138,46 +137,47 @@
             margin: 0 auto 20px;
             box-shadow: 0 5px 15px rgba(74, 0, 224, 0.3);
         }
-
+        
         .file-label:hover {
             transform: translateY(-3px);
             box-shadow: 0 8px 20px rgba(74, 0, 224, 0.4);
         }
-
+        
         .file-label i {
             margin-right: 10px;
         }
-
+        
         .file-info {
             background-color: #f5f9ff;
             border-radius: 10px;
             padding: 15px;
-            margin: 20px 0;
+
+margin: 20px 0;
             display: none;
         }
-
+        
         .file-info.active {
             display: block;
         }
-
+        
         .file-name {
             font-weight: 600;
             color: #4a00e0;
             margin-bottom: 10px;
             word-break: break-all;
         }
-
+        
         .file-size {
             color: #777;
             font-size: 0.9rem;
         }
-
+        
         #qrcode {
             margin: 25px auto;
             display: flex;
             justify-content: center;
         }
-
+        
         .btn {
             background: linear-gradient(to right, #00c853, #00e676);
             color: white;
@@ -194,25 +194,25 @@
             width: 100%;
             max-width: 300px;
         }
-
+        
         .btn:hover {
             transform: translateY(-3px);
             box-shadow: 0 8px 20px rgba(0, 200, 83, 0.4);
         }
-
+        
         .btn i {
             margin-right: 10px;
         }
-
+        
         .btn.receive {
             background: linear-gradient(to right, #ff9800, #ff5722);
             box-shadow: 0 5px 15px rgba(255, 152, 0, 0.3);
         }
-
+        
         .btn.receive:hover {
             box-shadow: 0 8px 20px rgba(255, 152, 0, 0.4);
         }
-
+        
         .connection-info {
             display: flex;
             justify-content: center;
@@ -220,12 +220,12 @@
             margin: 30px 0;
             flex-wrap: wrap;
         }
-
+        
         .connection-item {
             text-align: center;
             min-width: 150px;
         }
-
+        
         .connection-item i {
             font-size: 2.5rem;
             color: #4a00e0;
@@ -236,21 +236,21 @@
             border-radius: 50%;
             margin-bottom: 15px;
         }
-
+        
         .connection-item h3 {
             color: #333;
             margin-bottom: 5px;
         }
-
+        
         .connection-item p {
             color: #777;
             font-size: 0.9rem;
         }
-
+        
         .receive-section .card {
             position: relative;
         }
-
+        
         .scan-area {
             background-color: #f5f9ff;
             border: 2px dashed #4a00e0;
@@ -264,20 +264,20 @@
             position: relative;
             overflow: hidden;
         }
-
+        
         .scan-area i {
             font-size: 5rem;
             color: #4a00e0;
             opacity: 0.3;
             margin-bottom: 20px;
         }
-
+        
         .scan-area p {
             color: #4a00e0;
             font-weight: 600;
             font-size: 1.2rem;
         }
-
+        
         .progress {
             height: 8px;
             background-color: #e0e0e0;
@@ -285,14 +285,14 @@
             overflow: hidden;
             margin: 20px 0;
         }
-
+        
         .progress-bar {
             height: 100%;
             background: linear-gradient(to right, #4a00e0, #8e2de2);
             width: 0%;
             transition: width 0.5s ease;
         }
-
+        
         .status {
             text-align: center;
             font-weight: 600;
@@ -300,7 +300,7 @@
             margin-bottom: 20px;
             min-height: 24px;
         }
-
+        
         .devices {
             display: flex;
             justify-content: center;
@@ -308,34 +308,35 @@
             margin-top: 30px;
             flex-wrap: wrap;
         }
-
+        
         .device {
             background: linear-gradient(135deg, #f5f7fa 0%, #e4e7f1 100%);
             border-radius: 15px;
             padding: 20px;
             text-align: center;
-            width: 150px;
+
+width: 150px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             transition: all 0.3s ease;
             cursor: pointer;
         }
-
+        
         .device:hover {
             transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
-
+        
         .device i {
             font-size: 3rem;
             color: #4a00e0;
             margin-bottom: 15px;
         }
-
+        
         .device h3 {
             color: #333;
             font-size: 1rem;
         }
-
+        
         footer {
             text-align: center;
             padding: 20px;
@@ -343,21 +344,21 @@
             font-size: 0.9rem;
             background-color: #f9f9f9;
         }
-
+        
         .transfer-modal {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0,0,0,0.8);
             display: flex;
             align-items: center;
             justify-content: center;
             z-index: 100;
             display: none;
         }
-
+        
         .transfer-content {
             background: white;
             border-radius: 20px;
@@ -367,127 +368,104 @@
             width: 90%;
             animation: scaleIn 0.3s ease;
         }
-
+        
         .transfer-icon {
             font-size: 4rem;
             color: #4a00e0;
             margin-bottom: 20px;
             animation: pulse 2s infinite;
         }
-
+        
         .device-name {
             font-size: 1.2rem;
             margin-bottom: 20px;
             color: #333;
         }
-
+        
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
-
+        
         @keyframes pulse {
-            0% {
-                transform: scale(1);
-            }
-
-            50% {
-                transform: scale(1.1);
-            }
-
-            100% {
-                transform: scale(1);
-            }
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
         }
-
+        
         @keyframes scaleIn {
-            from {
-                transform: scale(0.8);
-                opacity: 0;
-            }
-
-            to {
-                transform: scale(1);
-                opacity: 1;
-            }
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
         }
-
+        
         @media (max-width: 768px) {
             .logo h1 {
                 font-size: 2rem;
             }
-
+            
             .connection-info {
                 flex-direction: column;
                 align-items: center;
                 gap: 20px;
             }
-
+            
             .content {
                 padding: 20px;
             }
-
+            
             .card {
                 padding: 20px;
             }
-
+            
             .device {
                 width: 130px;
                 padding: 15px;
             }
         }
-
+        
         @media (max-width: 480px) {
             .logo h1 {
                 font-size: 1.8rem;
             }
-
+            
             .logo i {
                 font-size: 2.2rem;
             }
-
+            
             .tab {
                 padding: 8px;
                 font-size: 0.9rem;
             }
-
+            
             .card h2 {
                 font-size: 1.5rem;
             }
-
+            
             .file-label {
                 font-size: 1rem;
                 padding: 12px 25px;
             }
-
+            
             .btn {
                 font-size: 1rem;
                 padding: 12px 25px;
             }
-
+            
             .devices {
                 gap: 15px;
             }
-
+            
             .device {
                 width: 110px;
                 padding: 12px;
             }
-
+            
             .device i {
                 font-size: 2.5rem;
             }
         }
     </style>
 </head>
-
 <body>
     <div class="container">
         <header>
@@ -500,35 +478,34 @@
                 <div class="tab" data-tab="receive">Receive</div>
             </div>
         </header>
-        <div class="content">
+<div class="content">
             <!-- Send Section -->
             <div id="send-section" class="section active">
                 <div class="card">
                     <h2>Send Files Instantly</h2>
-                    <p>Select a file to generate a QR code for sharing. The receiver can scan this code to download your
-                        file.</p>
-
+                    <p>Select a file to generate a QR code for sharing. The receiver can scan this code to download your file.</p>
+                    
                     <input type="file" id="file-input" class="file-input">
                     <label for="file-input" class="file-label">
                         <i class="fas fa-cloud-upload-alt"></i> Choose File
                     </label>
-
+                    
                     <div id="file-info" class="file-info">
                         <div class="file-name" id="file-name">No file selected</div>
                         <div class="file-size" id="file-size">-</div>
                     </div>
-
+                    
                     <div id="qrcode"></div>
-
+                    
                     <button id="share-btn" class="btn">
                         <i class="fas fa-share-alt"></i> Share via QR Code
                     </button>
                 </div>
-
+                
                 <div class="card">
                     <h2>Connect Devices</h2>
                     <p>Connect directly to nearby devices for faster transfer without internet.</p>
-
+                    
                     <div class="connection-info">
                         <div class="connection-item">
                             <i class="fas fa-wifi"></i>
@@ -546,38 +523,38 @@
                             <p>Connect to the same Wi-Fi</p>
                         </div>
                     </div>
-
+                    
                     <button id="connect-devices-btn" class="btn">
                         <i class="fas fa-link"></i> Connect Devices
                     </button>
                 </div>
             </div>
-
+            
             <!-- Receive Section -->
             <div id="receive-section" class="section">
                 <div class="card">
                     <h2>Receive Files</h2>
                     <p>Scan the sender's QR code to download files directly to your device.</p>
-
+                    
                     <div class="scan-area">
                         <i class="fas fa-camera"></i>
                         <p>Point camera at QR code</p>
                     </div>
-
+                    
                     <div class="status" id="receive-status">Ready to scan</div>
                     <div class="progress">
                         <div class="progress-bar" id="progress-bar"></div>
                     </div>
-
+                    
                     <button id="scan-btn" class="btn receive">
                         <i class="fas fa-camera"></i> Scan QR Code
                     </button>
                 </div>
-
+                
                 <div class="card">
                     <h2>Available Devices</h2>
                     <p>Select a device to receive files from:</p>
-                    <div class="devices">
+<div class="devices">
                         <div class="device" data-name="John's MacBook" data-type="laptop">
                             <i class="fas fa-laptop"></i>
                             <h3>John's MacBook</h3>
@@ -594,11 +571,11 @@
                 </div>
             </div>
         </div>
-
+        
         <footer>
-            <p>FileShare App &copy; 2025G.C & 2017E.C | Send and receive files without internet</p>
+            <p>FileShare App &copy; 2023 | Send and receive files without internet</p>
         </footer>
-
+        
         <!-- Transfer Modal -->
         <div class="transfer-modal" id="transfer-modal">
             <div class="transfer-content">
@@ -622,22 +599,22 @@
         // Tab switching functionality
         const tabs = document.querySelectorAll('.tab');
         const sections = document.querySelectorAll('.section');
-
+        
         tabs.forEach(tab => {
             tab.addEventListener('click', () => {
                 // Remove active class from all tabs and sections
                 tabs.forEach(t => t.classList.remove('active'));
                 sections.forEach(s => s.classList.remove('active'));
-
+                
                 // Add active class to clicked tab
                 tab.classList.add('active');
-
+                
                 // Show corresponding section
                 const tabName = tab.getAttribute('data-tab');
-                document.getElementById({ tabName } - section).classList.add('active');
+                document.getElementById(${tabName}-section).classList.add('active');
             });
         });
-
+        
         // File selection functionality
         const fileInput = document.getElementById('file-input');
         const fileName = document.getElementById('file-name');
@@ -645,37 +622,38 @@
         const fileInfo = document.getElementById('file-info');
         const shareBtn = document.getElementById('share-btn');
         const qrcodeDiv = document.getElementById('qrcode');
-
-        fileInput.addEventListener('change', function () {
+        
+        fileInput.addEventListener('change', function() {
             if (this.files && this.files[0]) {
                 const file = this.files[0];
                 fileName.textContent = file.name;
-
+                
                 // Format file size
                 const size = file.size;
                 const i = Math.floor(Math.log(size) / Math.log(1024));
                 const formattedSize = (size / Math.pow(1024, i)).toFixed(2) * 1 + ' ' + ['B', 'kB', 'MB', 'GB', 'TB'][i];
                 fileSize.textContent = formattedSize;
-
+                
                 fileInfo.classList.add('active');
                 shareBtn.disabled = false;
             }
         });
-
+        
         // Generate QR code
-        shareBtn.addEventListener('click', function () {
+        shareBtn.addEventListener('click', function() {
             if (fileInput.files.length === 0) {
                 alert('Please select a file first!');
                 return;
             }
-
+            
             // Clear previous QR code
             qrcodeDiv.innerHTML = '';
-            // Generate unique file URL
+
+// Generate unique file URL
             const file = fileInput.files[0];
             const fileId = Math.random().toString(36).substr(2, 9);
-            const fileUrl = 'https://fileshare.com/download/${fileId}';
-
+            const fileUrl = https://fileshare.com/download/${fileId};
+            
             // Generate QR code
             new QRCode(qrcodeDiv, {
                 text: fileUrl,
@@ -685,29 +663,29 @@
                 colorLight: "#ffffff",
                 correctLevel: QRCode.CorrectLevel.H
             });
-
+            
             // Show success message
             alert('QR code generated! The receiver can scan this code to download the file.');
         });
-
+        
         // Scan button functionality
         const scanBtn = document.getElementById('scan-btn');
         const progressBar = document.getElementById('progress-bar');
         const receiveStatus = document.getElementById('receive-status');
-
-        scanBtn.addEventListener('click', function () {
+        
+        scanBtn.addEventListener('click', function() {
             receiveStatus.textContent = "Scanning QR code...";
             progressBar.style.width = '0%';
-
+            
             // Simulate scanning process
             setTimeout(() => {
                 progressBar.style.width = '50%';
                 receiveStatus.textContent = "QR code detected!";
-
+                
                 setTimeout(() => {
                     progressBar.style.width = '100%';
                     receiveStatus.textContent = "File ready to download!";
-
+                    
                     // Show download button
                     setTimeout(() => {
                         scanBtn.innerHTML = '<i class="fas fa-download"></i> Download File';
@@ -716,7 +694,7 @@
                 }, 1000);
             }, 1500);
         });
-
+        
         // Device selection functionality
         const devices = document.querySelectorAll('.device');
         const transferModal = document.getElementById('transfer-modal');
@@ -724,40 +702,42 @@
         const transferProgressBar = document.getElementById('transfer-progress-bar');
         const transferStatus = document.getElementById('transfer-status');
         const cancelTransferBtn = document.getElementById('cancel-transfer-btn');
-
+        
         devices.forEach(device => {
-            device.addEventListener('click', function () {
+            device.addEventListener('click', function() {
                 const deviceName = this.getAttribute('data-name');
                 const deviceType = this.getAttribute('data-type');
-
+                
                 // Update modal content
                 transferDeviceName.textContent = deviceName;
                 transferStatus.textContent = "Connecting to device...";
                 transferProgressBar.style.width = '0%';
-
+                
                 // Show modal
                 transferModal.style.display = 'flex';
-
+                
                 // Simulate connection and transfer
                 setTimeout(() => {
                     transferStatus.textContent = "Connected! Starting transfer...";
                     transferProgressBar.style.width = '25%';
-
+                    
                     setTimeout(() => {
                         transferStatus.textContent = "Transferring files...";
                         transferProgressBar.style.width = '50%';
-
+                        
                         setTimeout(() => {
                             transferStatus.textContent = "Finalizing transfer...";
                             transferProgressBar.style.width = '75%';
-
+                            
                             setTimeout(() => {
                                 transferStatus.textContent = "Transfer complete!";
                                 transferProgressBar.style.width = '100%';
-
+                                
                                 // Close modal after success
                                 setTimeout(() => {
-                                    transferModal.style.dalert('Files received successfully from ${ deviceName!');
+                                    transferModal.style.display = 'none';
+
+alert(Files received successfully from ${deviceName}!);
                                 }, 1000);
                             }, 1500);
                         }, 1500);
@@ -765,24 +745,24 @@
                 }, 1000);
             });
         });
-
+        
         // Cancel transfer
-        cancelTransferBtn.addEventListener('click', function () {
+        cancelTransferBtn.addEventListener('click', function() {
             transferModal.style.display = 'none';
             alert('Transfer cancelled');
         });
-
+        
         // Connect devices button
         const connectDevicesBtn = document.getElementById('connect-devices-btn');
-        connectDevicesBtn.addEventListener('click', function () {
+        connectDevicesBtn.addEventListener('click', function() {
             alert('Searching for nearby devices...');
-
+            
             // Simulate device discovery
             setTimeout(() => {
                 alert('3 devices found nearby!');
             }, 2000);
         });
-
+        
         // Reset scan button when switching tabs
         tabs.forEach(tab => {
             tab.addEventListener('click', () => {
@@ -796,6 +776,4 @@
         });
     </script>
 </body>
-
-
 </html>
