@@ -787,7 +787,7 @@
             tab.addEventListener('click', () => {
                 if (tab.getAttribute('data-tab') === 'receive') {
                     scanBtn.innerHTML = '<i class="fas fa-camera"></i> Scan QR Code';
-                    scanBtn.classList.remove('download-ready');
+                    scanBtn.classList('download-ready');
                     receiveStatus.textContent = "Ready to scan";
                     progressBar.style.width = '0%';
                 }
